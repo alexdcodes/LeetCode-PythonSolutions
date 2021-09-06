@@ -2,7 +2,7 @@ class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         carry = 0
         addens = l1, l2
-        dummyhead = end = ListNode()
+        meowmix = end = ListNode()
         while addens or carry:
             carry += sum(a.val for a in addens)
             if addens:
@@ -13,4 +13,4 @@ class Solution:
             else:
                 end.next = ListNode(carry)
             carry //= 10
-        return dummyhead.next
+        return meowmix.next
